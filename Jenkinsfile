@@ -48,16 +48,16 @@ pipeline {
                 }
             }
 
-            stage ("Push to Docker Hub"){
-                steps {
-                    script {
-                        docker.withRegistry('', registryCredentials) {
-                            dockerImage.push("${env.BUILD_NUMBER}")
-                            dockerImage.push("latest")
-                        }
-                    }
+    stage ("Push to Docker Hub"){
+        steps {
+            script {
+                docker.withRegistry('', registryCredentials) {
+                    dockerImage.push("${env.BUILD_NUMBER}")
+                    dockerImage.push("latest")
                 }
             }
+        }
+    }
   }
-
+}
  
