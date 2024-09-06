@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import "bootstrap/scss/bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const VatRateField = (props) => {
 
