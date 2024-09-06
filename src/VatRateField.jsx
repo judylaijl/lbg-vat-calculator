@@ -19,19 +19,22 @@ const VatRateField = (props) => {
                 <option value="12.5">12.5%</option>
                 <option value="0">Exempt</option>
             </select>
-        </div>
+        </div>,
+        <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+          <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+          <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+        </ul>
+      </div>
+
+        
     );
 }
 
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown
-  </button>
-  <ul class="dropdown-menu">
-    <li><button class="dropdown-item" type="button">Dropdown item</button></li>
-    <li><button class="dropdown-item" type="button">Dropdown item</button></li>
-    <li><button class="dropdown-item" type="button">Dropdown item</button></li>
-  </ul>
-</div>
+
 
 export default VatRateField;
